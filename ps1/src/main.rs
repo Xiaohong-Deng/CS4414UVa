@@ -10,6 +10,7 @@
 // University of Virginia - cs4414 Spring 2014
 // Weilin Xu and David Evans
 // Version 0.3
+#[--extern regex=path/to/libregex.rlib]
 extern crate regex;
 use regex::Regex;
 use std::io::{Read, Write};
@@ -59,18 +60,22 @@ fn main() {
               let re1 = Regex::new(r"^GET.*\n").unwrap();
               let pos1 = re1.find(body).unwrap();
               let first_line = &body[pos1.0..pos1.1];
-              let re2 = Regex::new(r"\/.*\s").unwrap();
+              let re2 = Regex::new(r"/[^\s]* ").unwrap();
               let pos2 = re2.find(first_line).unwrap();
               let file_path_str = &first_line[pos2.0..pos2.1];
               match file_path_str.ends_with(".html") {
                 true => { let file_path = Path::new(file_path_str);
                   let file = File::open(&file_path);
                   match file {
-                    Ok(file_cont) => { let mut bytes: Vec<u8> = Vec::new(); 
-                      file_cont.read_to_end(&mut bytes);
+                    Ok(mut file_cont) => { let mut bytes: Vec<u8> = Vec::new(); 
+                      match file_cont.read_to_end(&mut bytes) {
+                        Ok(_) => println!("file read ok!"),
+                        Err(_) => println!("file read failed"),
+                      }
                       let info = "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n";
                       let mut info_bytes = info.to_string().into_bytes();
-                      let byte_slice = &(info_bytes.append(&mut bytes))[..];
+                      info_bytes.append(&mut bytes);
+                      let byte_slice = &info_bytes[..];
                       stream.write(byte_slice).unwrap(); },
                     Err(_) => { let response = "HTTP/1.1 404 OK\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n
                         <doctype !html><html><head><title>404 Error</title>
