@@ -64,7 +64,7 @@ fn main() {
                     Ok(mut file_cont) => { let mut bytes: Vec<u8> = Vec::new();
                       match file_cont.read_to_end(&mut bytes) {
                         Ok(_) => println!("file read ok!"),
-                        Err(_) => println!("file read failed");
+                        Err(_) => println!("file read failed"),
                       }
                       let info = "HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n";
                       // info_bytes is Vec[u8]

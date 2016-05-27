@@ -16,8 +16,6 @@ use std::env;
 use std::io::{self, Write};
 use std::process::Command;
 use std::path::Path;
-use std::io::{Read, Write};
-use std::fs::File;
 
 struct Shell<'a> {
   cmd_prompt: &'a str,
@@ -34,6 +32,8 @@ impl <'a>Shell<'a> {
     // stdin() returns a handle that is a reference to a shared global buffer
     let stdin = io::stdin();
     let mut stdout = io::stdout();
+    let mut hist_buf: Vec<String> = Vec::new();
+    let (mut start, mut end, mut cap) = (0, 0, 0);
 
     loop {
       stdout.write(self.cmd_prompt.as_bytes()).unwrap();
@@ -44,15 +44,45 @@ impl <'a>Shell<'a> {
       let mut line = String::new();
 
       stdin.read_line(&mut line).unwrap();
+      // trim() returns &str
       let cmd_line = line.trim();
+      let cmd_len = cmd_line.len();
+      if cap <= 20 {
+        match cmd_len {
+          0 => (),
+          1...129 => hist_buf.push(cmd_line.to_owned()),
+          _ => hist_buf.push((&cmd_line[..129]).to_owned()),
+        }
+      } else {
+        match cmd_len {
+          0 => (),
+          1...129 => hist_buf[end] = cmd_line.to_owned(),
+          _ => hist_buf[end] = (&cmd_line[..129]).to_owned(),
+        }
+      }
+      if cap < 20 {
+        cap += 1;
+        end = if cap == 20 {
+          0
+        } else {
+          end + 1
+        };
+      } else {
+        end = if end == 19 {
+          0
+        } else {
+          end + 1
+        };
+        start += 1;
+      }
       // cmd_line is this form: prog [arg1 arg2 ...]
       // program extract "prog [arg1 arg2 ...]"and panic with "no program" if Err
       let program = cmd_line.splitn(1, ' ').nth(0).expect("no program");
       // internal commands are implemented here
-      // _ mathces external command
+      // _ mathces external command or commands with args
       match program {
         ""      =>  { continue; }
-        "history" => { self.run_hist(cmd_line); }
+        "history" => { self.run_hist(&hist_buf, start, end, cap); }
         "exit"  =>  { return; }
         _       =>  { 
           let program = cmd_line.splitn(2, ' ').nth(0).expect("no program");
@@ -96,8 +126,28 @@ impl <'a>Shell<'a> {
     }
   }
 
-  fn run_hist(&self, cmd_line: &str) {
-
+  fn run_hist(&self, hist_buf: &[String], start: usize, end: usize, cap: usize) {
+    let mut linenum = 0;
+    if start == 0 {
+      for idx in 0..cap {
+        // note one thing
+        // if the type of the expression to the left of the
+        // brackets is a pointer, it is automatically dereferenced
+        // as many times as necessary to make the indexing possible.
+        // so hist_buf[idx as usize] is a str, need & as a prefix
+        println!("{}: {}", linenum, &hist_buf[idx as usize]);
+        linenum += 1;
+      }
+    } else {
+      for idx in start..cap {
+        println!("{}: {}", linenum, &hist_buf[idx as usize]);
+        linenum += 1;
+      }
+      for idx in 0..end {
+        println!("{}: {}", linenum, &hist_buf[idx as usize]);
+        linenum += 1;
+      }
+    }
   }
 
   fn run_cmdline(&self, cmd_line: &str) {

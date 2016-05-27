@@ -10,7 +10,6 @@
 // University of Virginia - cs4414 Spring 2014
 // Weilin Xu and David Evans
 // Version 0.3
-#[--extern regex=path/to/libregex.rlib]
 extern crate regex;
 use regex::Regex;
 use std::io::{Read, Write};
