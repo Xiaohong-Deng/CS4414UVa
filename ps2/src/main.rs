@@ -98,6 +98,8 @@ impl <'a>Shell<'a> {
   // according to the bash cd, should only take args[1] as path
   // ignore the rest args if any
   fn run_cd(&self, cmd_line: &str) {
+    // filter_map returns an iterator over <T>, so collect() will give
+    // a Vec here, well given what we specified
     let args: Vec<&str> = cmd_line.split(' ').filter_map(|x| {
       if x == "" {
         None
@@ -161,6 +163,8 @@ impl <'a>Shell<'a> {
     }).collect();
     // if None, cmd_line is empty
     match argv.first() {
+      // if argv is of size 1, &argv[1..] is an empty slice
+      // but &argv[2..] causes a panic!
       Some(&program) => self.run_cmd(program, &argv[1..]),
       None => (),
     };
@@ -170,7 +174,15 @@ impl <'a>Shell<'a> {
   // to use write method, all the output displays in the stdout of gash
   fn run_cmd(&self, program: &str, argv: &[&str]) {
     if self.cmd_exists(program) {
-      io::stdout().write(&Command::new(program).args(argv).output().unwrap().stdout).unwrap();
+      match argv.last() {
+        Some(last_arg) => { if *last_arg == "&" {
+            &Command::new(program).args(&argv[..argv.len()]).spawn().unwrap();
+          } else {
+            io::stdout().write(&Command::new(program).args(argv).output().unwrap().stdout).unwrap();
+          }
+        }
+        None => { io::stdout().write(&Command::new(program).args(argv).output().unwrap().stdout).unwrap(); }
+      }
     } else {
       println!("{}: command not found", program);
     }

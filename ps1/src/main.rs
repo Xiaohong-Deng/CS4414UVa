@@ -59,11 +59,11 @@ fn main() {
               let re1 = Regex::new(r"^GET.*\n").unwrap();
               let pos1 = re1.find(body).unwrap();
               let first_line = &body[pos1.0..pos1.1];
-              let re2 = Regex::new(r"/[^\s]* ").unwrap();
+              let re2 = Regex::new(r"/(\w*(\.\w*)?)?").unwrap();
               let pos2 = re2.find(first_line).unwrap();
               let file_path_str = &first_line[pos2.0..pos2.1];
               match file_path_str.ends_with(".html") {
-                true => { let file_path = Path::new(file_path_str);
+                true => { let file_path = Path::new(&file_path_str[1..]);
                   let file = File::open(&file_path);
                   match file {
                     Ok(mut file_cont) => { let mut bytes: Vec<u8> = Vec::new(); 
