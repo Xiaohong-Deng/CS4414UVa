@@ -85,12 +85,7 @@ impl <'a>Shell<'a> {
         "history" => { self.run_hist(&hist_buf, start, end, cap); }
         "exit"  =>  { return; }
         _       =>  { 
-          let program = cmd_line.splitn(2, ' ').nth(0).expect("no program");
-          if program == "cd" {
-            self.run_cd(cmd_line);
-          } else {
-            self.run_cmdline(cmd_line);
-          }
+          self.run_cmdline(cmd_line);
         }
       }
     }
@@ -150,6 +145,10 @@ impl <'a>Shell<'a> {
         linenum += 1;
       }
     }
+  }
+
+  fn parse_args(&self, cmd_line: &str) => Vec[&str] {
+
   }
 
   fn run_cmdline(&self, cmd_line: &str) {
