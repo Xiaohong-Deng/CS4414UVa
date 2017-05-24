@@ -1,0 +1,928 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"num",
+				"num_observations"
+			],
+			[
+				"get",
+				"get_ratings	(movie_data_helper.py)"
+			],
+			[
+				"compute_",
+				"compute_posterior"
+			],
+			[
+				"log_likelihood",
+				"log_likelihood_products"
+			],
+			[
+				"log",
+				"log_likelihood"
+			],
+			[
+				"log_",
+				"log_likelihood	statement"
+			],
+			[
+				"log_likeli",
+				"log_likelihood_products"
+			],
+			[
+				"log_li",
+				"log_likelihood_product"
+			],
+			[
+				"prob",
+				"prob_S_C_T	statement"
+			],
+			[
+				"pro",
+				"prob_S_given_T_1	statement"
+			],
+			[
+				"prob_S",
+				"prob_S_given_T_1	statement"
+			],
+			[
+				"prob_S_C",
+				"prob_S_C_given_T_0	statement"
+			],
+			[
+				"eac",
+				"eac-	each_cons(..) { |group| .. }"
+			],
+			[
+				"to",
+				"to_s〔function〕"
+			],
+			[
+				"prog_",
+				"prog_and_args_next Let (main.rs) : let prog_and_args_next = self.parse_args(cmds.remove(0))\\"
+			],
+			[
+				"O",
+				"Option    Enum (option.rs) : pub enum Option<T> {                                "
+			],
+			[
+				"output",
+				"output_redirect"
+			],
+			[
+				"wait",
+				"wait_with_output"
+			],
+			[
+				"cmd_",
+				"cmd_handler"
+			],
+			[
+				"input",
+				"input_redirect"
+			],
+			[
+				"next",
+				"next_cmd_handler"
+			],
+			[
+				"current_",
+				"current_cmd_handler"
+			],
+			[
+				"out",
+				"output_redirect"
+			],
+			[
+				"h",
+				"has"
+			],
+			[
+				"parse",
+				"parse_args"
+			],
+			[
+				"input_",
+				"input_path    Let (main.rs) : let input_path = Path::new(input)\\        "
+			],
+			[
+				"print",
+				"print_kernel"
+			],
+			[
+				"size",
+				"size_t"
+			],
+			[
+				"ex",
+				"ex_pre_scan"
+			],
+			[
+				"threads",
+				"threadsPerBlock"
+			],
+			[
+				"thread",
+				"threadsPerBlock"
+			],
+			[
+				"__",
+				"__syncthreads"
+			],
+			[
+				"bl",
+				"blockIdx"
+			],
+			[
+				"glob",
+				"__global__"
+			],
+			[
+				"sca",
+				"scatter_kernel"
+			],
+			[
+				"max_",
+				"max_logLum"
+			],
+			[
+				"find",
+				"find_max_and_min"
+			],
+			[
+				"global",
+				"global_max"
+			],
+			[
+				"d_min",
+				"d_min_intermediate"
+			],
+			[
+				"d_max",
+				"d_max_intermediate"
+			],
+			[
+				"global_",
+				"global_min"
+			],
+			[
+				"ARRA",
+				"ARRAY_SIZE"
+			],
+			[
+				"block",
+				"blockDim"
+			],
+			[
+				"bloc",
+				"blockDim"
+			],
+			[
+				"max",
+				"max_data"
+			],
+			[
+				"ind",
+				"idx_in_block"
+			],
+			[
+				"d_",
+				"d_logLuminance"
+			],
+			[
+				"grid",
+				"gridSize"
+			],
+			[
+				"d_red",
+				"d_redBlurred"
+			],
+			[
+				"chec",
+				"checkCudaErrors"
+			],
+			[
+				"blue",
+				"blueChannel"
+			],
+			[
+				"fil",
+				"filterWidth"
+			],
+			[
+				"filter",
+				"filter_c"
+			],
+			[
+				"filte",
+				"filter_r"
+			],
+			[
+				"absol",
+				"absolute_image_position_y"
+			],
+			[
+				"absolute_",
+				"absolute_image_position_x"
+			],
+			[
+				"ab",
+				"absolute_image_position_x"
+			],
+			[
+				"abs",
+				"absolute_image_position_y"
+			],
+			[
+				"ne",
+				"new                 Function (string.rs) : pub fn new() -> String                                                              "
+			],
+			[
+				"exter",
+				"extern-crate	extern crate …;"
+			],
+			[
+				"colle",
+				"collections         Module (lib.rs) : collections                                         "
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"run_cm",
+				"run_cmdline_redirection"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"run",
+				"run_cmdline_redirection"
+			],
+			[
+				"r",
+				"run_cmd"
+			],
+			[
+				"is",
+				"is_pipe"
+			],
+			[
+				"cmd",
+				"cmd_line"
+			],
+			[
+				"run_",
+				"run_redirection"
+			],
+			[
+				"run_cmd",
+				"run_cmdline"
+			],
+			[
+				"fr",
+				"frag_redirect_no_cmd"
+			],
+			[
+				"frag",
+				"frag_redirect_no_file"
+			],
+			[
+				"fra",
+				"frag_redirect"
+			],
+			[
+				"frag_re",
+				"frag_redirect_no_cmd"
+			],
+			[
+				"last",
+				"last_arg"
+			],
+			[
+				"enu",
+				"enumerate"
+			],
+			[
+				"cml",
+				"cmd_line"
+			],
+			[
+				"hist",
+				"hist_buf"
+			],
+			[
+				"prog",
+				"program"
+			],
+			[
+				"spli",
+				"splitn"
+			],
+			[
+				"math",
+				"match	match … { … }"
+			],
+			[
+				"std",
+				"stdout"
+			],
+			[
+				"file_path",
+				"file_path_str"
+			],
+			[
+				"file",
+				"file_path_str"
+			],
+			[
+				"info",
+				"info_bytes"
+			],
+			[
+				"from",
+				"from_utf8"
+			],
+			[
+				"msg_",
+				"msg_share2_f"
+			],
+			[
+				"msg",
+				"msg_share2_f"
+			],
+			[
+				"rand",
+				"random"
+			],
+			[
+				"msg_share2",
+				"msg_share2_byte2"
+			],
+			[
+				"msg_sha",
+				"msg_share2"
+			],
+			[
+				"f_share",
+				"f_share2"
+			],
+			[
+				"tar",
+				"target_usr_msg"
+			],
+			[
+				"raw",
+				"raw_second_message"
+			],
+			[
+				"read",
+				"read_cont"
+			],
+			[
+				"tag",
+				"tag"
+			],
+			[
+				"ra",
+				"raw_second_author"
+			],
+			[
+				"post",
+				"postmessage"
+			],
+			[
+				"class",
+				"class	New Class"
+			],
+			[
+				"des",
+				"des_1st"
+			],
+			[
+				"url",
+				"url_str"
+			],
+			[
+				"all",
+				"all_urls_str"
+			],
+			[
+				"all_",
+				"all_urls_str"
+			],
+			[
+				"b",
+				"BeautifulSoup"
+			],
+			[
+				"inc",
+				"incrementMut"
+			],
+			[
+				"child",
+				"child_a"
+			],
+			[
+				"Like",
+				"LinkedList"
+			],
+			[
+				"cand",
+				"current_cands"
+			],
+			[
+				"steps",
+				"steps_count"
+			],
+			[
+				"su",
+				"successor_b"
+			],
+			[
+				"succ",
+				"successor_b"
+			],
+			[
+				"pr",
+				"predecessor"
+			],
+			[
+				"re",
+				"reverse_collatz"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pc",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/GitProject/CS4414UVa/ps2"
+	],
+	"file_history":
+	[
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/hello.ru",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/lib/ruby_intro.rb",
+		"/D/GitProject/NP_TOYs/knapsack/BranchBound.java",
+		"/D/GitProject/NP_TOYs/knapsack/DynamicProg.java",
+		"/D/GitProject/stanford-db/sql-movie-ratings-challenge-Q1.sql",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/sql-movie-ratings-challenge-Q3.sql",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/sql-movie-ratings-challenge-Q2.sql",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/AdvancedNewFile/AdvancedNewFile.sublime-settings",
+		"/D/6.008x Computational Probability and Inference/plt_func.py",
+		"/D/6.008x Computational Probability and Inference/alice_hunt_dragons.py",
+		"/D/6.008x Computational Probability and Inference/comp_prob_inference.py",
+		"/D/6.008x Computational Probability and Inference/movie-rating.log",
+		"/D/6.008x Computational Probability and Inference/movie-rating/data/movieNames.dat",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+		"/D/6.008x Computational Probability and Inference/movie-rating/movie_data_helper.py",
+		"/D/6.008x Computational Probability and Inference/movie-rating/movie_recommendations.py",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/Python.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/Rust.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/JSON.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/Anaconda.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/SublimeLinter.sublime-settings",
+		"/D/Finished Courses/CS255 Cryptography I/PA02.py",
+		"/D/Finished Courses/CS255 Cryptography I/PA03.py",
+		"/D/Finished Courses/CS255 Cryptography I/PA05.py",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/D/GitProject/cs169-saas/hw-sinatra-saas-hangperson/lib/hangperson_game.rb",
+		"/D/Finished Courses/CS255 Cryptography I/WEEK3Q89.py",
+		"/D/Finished Courses/CS255 Cryptography I/poa.py",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/RustAutoComplete.sublime-settings",
+		"/C/Users/nicenick/.cargo/.crates.toml",
+		"/C/Users/nicenick/.cargo/registry/index/github.com-1ecc6299db9ec823/.cargo-index-lock",
+		"/C/Users/nicenick/.cargo/registry/index/github.com-1ecc6299db9ec823/config.json",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/Rust/Rust.sublime-settings",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/RustAutoComplete/Preferences.sublime-settings",
+		"/D/GitProject/CS4414UVa/ps2/redirect_snippet.rs",
+		"/D/GitProject/Pub-Ref-Sol/ps2/gash.rs",
+		"/D/GitProject/CS4414UVa/ps2/src/main.rs",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/SublimeREPL/config/Ruby/Main.sublime-menu",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/secret_share/splitter.rs",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/secret_share/joiner.rs",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/spec/part2_spec.rb",
+		"/D/GitProject/cs169-saas/hw-ruby-intro/spec/part3_spec.rb",
+		"/C/Coding/Git/etc/profile",
+		"/C/Users/nicenick/.spyder2-py3/template.py",
+		"/D/GitProject/cs169-saas/.git/description",
+		"/D/GitProject/cs169-saas/.git/config",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/SublimeREPL/config/Ruby/pry_repl.rb",
+		"/C/Coding/Sublime Text Build 3103 x64/Data/Packages/User/SublimeREPL.sublime-settings",
+		"/D/百科/ssledge-tls.conf",
+		"/D/6.008x Computational Probability and Inference/two_dice_sum_PMF.py",
+		"/D/Coursera/financial aid.txt",
+		"/D/GitProject/CS4414UVa/ps1/src/main.rs",
+		"/D/HD600C/version.log",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/student_func.cu",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 3/student_func.cu",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 4/student_func.cu",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 3/reference_calc.cpp",
+		"/D/GitProject/udc-cs344/Lesson Code Snippets/Lesson 3 Code Snippets/reduce.cu",
+		"/D/GitProject/udc-cs344/Lesson Code Snippets/Lesson 3 Code Snippets/histo.cu",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 3/main.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 1/student_func.cu",
+		"/D/Finished Courses/CSE351 The Hardware Software Interface/course-materials/lab5/mm.c",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/main.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/HW2.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/timer.h",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/compare.h",
+		"/D/GitProject/cmu15418/.git/MERGE_MSG",
+		"/D/GitProject/cmu15418/.git/COMMIT_EDITMSG",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 3/Makefile",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/Makefile",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/compare.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/utils.h",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 3/HW3.cu",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 1/HW1.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 1/main.cpp",
+		"/D/GitProject/udc-cs344/Problem Sets/Problem Set 2/reference_calc.cpp",
+		"/D/GitProject/CS4414UVa/ps1/src/zhttpto_no_regex.rs",
+		"/D/Finished Courses/6.004x Computation Structures/part3_Computer Organization/TinyOS",
+		"/D/Scala Spec/course1/objsets/src/main/scala/objsets/TweetSet.scala",
+		"/D/Scala Spec/course1/funsets/src/main/scala/funsets/FunSets.scala",
+		"/D/GitProject/NTUML/HW8Q19.m",
+		"/D/GitProject/NTUML/hw8_kmeans_train.dat",
+		"/D/GitProject/NTUML/HW8Q20.m",
+		"/D/6.004x Computation Structures/part3_Computer Organization/TinyOS",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/guessing_game/main.rs",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/streams/src/main/scala/streams/Solver.scala",
+		"/D/Scala Spec/streams/src/main/scala/streams/Solver.scala",
+		"/D/Scala Spec/streams/src/main/scala/streams/GameDef.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/streams/src/main/scala/streams/GameDef.scala",
+		"/D/Scala Spec/streams/src/main/scala/streams/StringParserTerrain.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/streams/src/main/scala/streams/StringParserTerrain.scala",
+		"/D/Scala Spec/forcomp/src/main/scala/forcomp/Anagrams.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/forcomp/src/main/scala/forcomp/Anagrams.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/patmat/src/main/scala/patmat/Huffman.scala",
+		"/D/Scala Spec/patmat/src/main/scala/patmat/Huffman.scala",
+		"/D/Scala Spec/funsets/src/main/scala/funsets/FunSets.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/funsets/funsets/src/main/scala/funsets/FunSets.scala",
+		"/D/Scala Spec/objsets/src/main/scala/objsets/TweetSet.scala",
+		"/D/Finished Courses/CS Functional Programming Principles in Scala/objsets/objsets/src/main/scala/objsets/TweetSet.scala",
+		"/D/Scala Spec/funsets/src/main/scala/funsets/Main.scala",
+		"/D/Scala Spec/recfun/src/main/scala/recfun/Main.scala",
+		"/D/6.004x Computation Structures/part2_Computer Architecture/ilog2.py",
+		"/D/6.004x Computation Structures/part2_Computer Architecture/lab6",
+		"/D/Finished Courses/CS190.1x Sclable Machine Learning/ML_lab1_review_student.py",
+		"/D/GitProject/algorithms/sort/mergesort.c",
+		"/D/GitProject/algorithms/LeetCode/easy/deleteNodeInLinkedList.java",
+		"/D/GitProject/algorithms/LeetCode/easy/numGame.java",
+		"/D/GitProject/algorithms/LeetCode/easy/moveZeros.java",
+		"/D/GitProject/algorithms/LeetCode/easy/invertBinaryTree.java",
+		"/D/GitProject/algorithms/LeetCode/easy/maxDepthBinaryTree.java",
+		"/D/GitProject/algorithms/LeetCode/easy/addDigits.java",
+		"/D/GitProject/algorithms/LeetCode/easy/sameTree.java",
+		"/D/GitProject/algorithms/LeetCode/easy/validAnagram.java",
+		"/D/GitProject/NTUML/.gitignore",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/collatz/main.rs",
+		"/D/GitProject/CS4414UVa/.git/COMMIT_EDITMSG",
+		"/D/GitProject/CS4414UVa/ps2/Cargo.toml",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/regex/regex.rs",
+		"/D/GitProject/ps1/src/zhttpto_no_regex.rs",
+		"/D/GitProject/ps1/src/main.rs",
+		"/D/GitProject/ps1/src/prob3.rs",
+		"/D/GitProject/rust_projects/cs4414rust_tutor/regex/with_str_methods.rs"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"auto",
+			"alt",
+			"under",
+			"pep8",
+			"format",
+			"pep",
+			"indent",
+			"lint",
+			"catalog",
+			"language",
+			"comb",
+			"cargo",
+			"rust",
+			"catalog",
+			"home",
+			"process",
+			"spawn",
+			"bg",
+			"self",
+			"run_cd",
+			"cd",
+			"file",
+			"cmdline",
+			"spawn",
+			"width",
+			"checkcudaerror",
+			"cudagetlasterror",
+			"cudalast",
+			"();\n",
+			"student",
+			"allocateMemory",
+			"add",
+			"filterWidth",
+			"d_rgb",
+			"malloc",
+			"FLAG",
+			"illegal instruction",
+			"I_mouse",
+			"hexprt",
+			"clk",
+			"wrmsg",
+			"CLK",
+			"SVC",
+			"I_Clk",
+			"process 2",
+			"P2Start",
+			"p0start",
+			"p1start",
+			"send",
+			"getkeyh",
+			"prompt",
+			"SVC(0)",
+			"SVC",
+			"vec_",
+			"empty",
+			"_",
+			"0.9",
+			"run",
+			"stdin",
+			"command",
+			"spawn",
+			" \n",
+			"content",
+			"cont",
+			"postauthor",
+			"message",
+			"author",
+			"diet",
+			"tied",
+			"site",
+			"SIT",
+			"tat",
+			"pat",
+			"SNE",
+			"SNEQ",
+			"QU",
+			"QUESTION",
+			"TAT",
+			"read_to_end",
+			"msg_share1",
+			"xor",
+			"mut",
+			"postauthor",
+			"postmessage",
+			"postauthor",
+			"postauthor\" rowspan",
+			"postauthor",
+			"postmessage",
+			"postinfo",
+			"postauthor",
+			"postmessage",
+			"postauthor",
+			"postmessage_",
+			"postmessage",
+			"href",
+			"新窗口打开",
+			"postinfo",
+			"postauthor",
+			"http",
+			"</html>",
+			"xufeng",
+			"pip",
+			"steps_count",
+			";\n",
+			");\n",
+			"longest",
+			"exit",
+			"plain",
+			"text",
+			"language",
+			"compute"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rust-shell.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
