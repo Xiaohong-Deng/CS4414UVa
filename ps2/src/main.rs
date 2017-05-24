@@ -10,6 +10,7 @@
 //
 
 extern crate getopts;
+
 use getopts::Options;
 use std::env;
 use std::io::{self, Write};
